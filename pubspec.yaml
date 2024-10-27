@@ -70,6 +70,8 @@ flutter:
   assets:
      - assets/foto.jpg
      - assets/iconsgit2.svg
+     - assets/logo_up.png
+     - assets/octocat.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

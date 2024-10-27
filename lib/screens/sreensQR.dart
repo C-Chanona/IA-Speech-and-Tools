@@ -44,15 +44,15 @@ class _QrCodeScannerState extends State<QR> {
                 value: 0,
                 child: ListTile(
                   leading: Icon(Icons.person),
-                  title: Text('Yahir Alberto'),
-                  subtitle: Text('Albores Madrigal'),
+                  title: Text('Carlos Eduardo'),
+                  subtitle: Text('Chanona Aquino'),
                 ),
               ),
               const PopupMenuItem<int>(
                 value: 0,
                 child: ListTile(
                   leading: Icon(Icons.badge),
-                  title: Text('221228'),
+                  title: Text('221233'),
                 ),
               ),
               const PopupMenuItem<int>(
@@ -71,7 +71,7 @@ class _QrCodeScannerState extends State<QR> {
                     padding: const EdgeInsets.all(10),
                     onPressed: () {
                       launch(
-                          "https://github.com/YahirAlbores221228/Aplications.git");
+                          "https://github.com/C-Chanona/IA-Speech-and-Tools.git");
                     }),
               ),
             ],

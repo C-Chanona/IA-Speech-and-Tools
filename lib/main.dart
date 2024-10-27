@@ -4,6 +4,7 @@ import 'screens/screenspechtext.dart';
 import 'screens/screenstextspecht.dart';
 import 'screens/screenssensor.dart';
 import 'screens/screensgeolocator.dart';
+import 'screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.cyan, 
       ),
       home: const BottomNavigationBarExample(),
+      // home: const HomeScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
@@ -37,6 +39,7 @@ class _BottomNavigationBarExampleState
   int _selectedIndex = 0;
 
   static const List<Widget> _widgetOptions = <Widget>[
+    HomeScreen(),
     QR(),
     SpeechText(),
     Texspech(),
@@ -60,6 +63,10 @@ class _BottomNavigationBarExampleState
         type: BottomNavigationBarType.fixed,  // Fijo para asegurar el comportamiento correcto
         backgroundColor: Colors.white,        // Forzamos el fondo blanco
         items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
           BottomNavigationBarItem(
             icon: Icon(Icons.qr_code),
             label: 'QR',
